@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="css/recetas.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <style>
+        .rosado{border: 3px solid #ff0091;color: #ff0091;}
+        .rosado:hover{background: #ff0091;color: #fff;}
+
+        .lila{border: 3px solid #af1eaa;color: #af1eaa;}
+        .lila:hover{background: #af1eaa;color: #fff;}
+
+        .anaranjado{border: 3px solid #ff4614;color: #ff4614;}
+        .anaranjado:hover{background: #ff4614;color: #fff;}
+
+        .verde{border: 3px solid #91d700;color: #91d700;}
+        .verde:hover{background: #91d700;color: #fff;}
+
+        .celeste{border: 3px solid #00b4ff;color: #00b4ff;}
+        .celeste:hover{background: #00b4ff;color: #fff;}
+
+        .amarillo{border: 3px solid #ffcd00;color: #ffcd00;}
+        .amarillo:hover{background: #ffcd00;color: #fff;}
+
+        .purpura{border: 3px solid #9900ff;color: #9900ff;}
+        .purpura:hover{background: #9900ff;color: #fff;}
+
+        .azul{border: 3px solid #006eff;color: #006eff;}
+        .azul:hover{background: #006eff;color: #fff;}
+
+        .cafe{border: 3px solid #964600;color: #964600;}
+        .cafe:hover{background: #964600;color: #fff;}
+
+        .naranja{border: 3px solid #ff8c00;color: #ff8c00;}
+        .naranja:hover{background: #ff8c00;color: #fff;}
+
+        .rojo{border: 3px solid #eb0028;color: #eb0028;}
+        .rojo:hover{background: #eb0028;color: #fff;}
+
+        .menta{border: 3px solid #2dd7c3;color: #2dd7c3;}
+        .menta:hover{background: #2dd7c3;color: #fff;}
+    </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <a href="../index.html" class="logo"><img src="img/black logo.png" alt=""></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="nosotros.html" class="nosotros">Nosotros</a></li>
+        <li><a href="productos.html" class="productos">Productos</a>
+            <ul>
+
+                <li><a href="productos.html" class="seleccion1">Not<span class="pink">Mayo</span></a>
+                    <ul>
+                        <li><a href="html productos/mayo.html" class="seleccion">Mayo<span class="pink">Original</span></a></li>
+                        <li><a href="html productos/garlic.html" class="seleccion">Mayo<span class="purple">Garlic</span></a></li>
+                        <li><a href="html productos/spicy.html" class="seleccion">Mayo<span class="redorange">Spicy</span></a></li>
+                        <li><a href="html productos/olive.html" class="seleccion">Mayo<span class="green">Olive</span></a></li>
+                        <li><a href="html productos/lowfat.html" class="seleccion">Mayo<span class="blue">Low Fat</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="burger.html" class="seleccion1">Not<span class="yellow">Burger</span></a>
+                    <ul>
+                        <li><a href="html productos/burger100.html" class="seleccion">Burger<span class="yellow">100G</span></a></li>
+                        <li><a href="html productos/burger500.html" class="seleccion">Burger<span class="yellow">500G</span></a></li>
+                        <li><a href="html productos/burgerxl.html" class="seleccion">Burger<span class="yellow">XL</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="chicken.html" class="seleccion1">Not<span class="purple">Chicken</span></a>
+                    <ul>
+                        <li><a href="html productos/chicken.html" class="seleccion">Not<span class="purple">Burger</span></a></li>
+                        <li><a href="html productos/chickencrispy.html" class="seleccion">Not<span class="morado">Burger Crispy</span></a></li>
+                        <li><a href="html productos/nuggets.html" class="seleccion">Not<span class="darkblue">Nuggets</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="milk.html" class="seleccion1">Not<span class="blue">Milk</span></a>
+                    <ul>
+                        <li><a href="html productos/milkoriginal.html" class="seleccion">Milk<span class="darkblue">Original</span></a></li>
+                        <li><a href="html productos/milklowfat.html" class="seleccion">Milk<span class="blue">Low Fat</span></a></li>
+                        <li><a href="html productos/milkchocolate.html" class="seleccion">Milk<span class="brown">Chocolate</span></a></li>
+                        <li><a href="html productos/milkzero.html" class="seleccion">Milk<span class="green">Zero</span></a></li>
+                        <li><a href="html productos/milkcaramelo.html" class="seleccion">Milk<span class="brown">Café Caramelo</span></a></li>
+                        <li><a href="html productos/milkhppeanut.html" class="seleccion">Milk<span class="orange">HP Peanut Butter</span></a></li>
+                        <li><a href="html productos/milkhpchocolate.html" class="seleccion">Milk<span class="brown">HP Chocolate</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="cheese.html" class="seleccion1">Not<span class="yellow">Cheese</span></a>
+                    <ul>
+                        <li><a href="html productos/mantecoso.html" class="seleccion">Cheese<span class="yellow">Mantecoso</span></a></li>
+                        <li><a href="html productos/cheddar.html" class="seleccion">Cheese<span class="orange">Cheddar</span></a></li>
+                        <li><a href="html productos/merkén.html" class="seleccion">Cheese<span class="red">Merkén</span></a></li>
+                        <li><a href="html productos/ahumado.html" class="seleccion">Cheese<span class="pink">Ahumado</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="icecream.html" class="seleccion1">Not<span class="red">Icecream</span></a></li>
+                <li><a href="html productos/cream.html" class="seleccion1">Not<span class="blue">Cream</span></a></li>
+                <li><a href="html productos/meat.html" class="seleccion1">Not<span class="redorange">Meat</span></a></li>
+                <li><a href="html productos/milanesa.html" class="seleccion1">Not<span class="orange">Mila</span></a></li>
+
+            </ul>
+        </li>
+        <li><a href="recetas.html" class="recetas">Recetasnot</a>
+            <ul>
+                <li><a href="empanada.html" class="seleccion2">Not<span class="orange">Empanada</span></a></li>
+                <li><a href="arroz.html" class="seleccion2">Not<span class="blue">Arroz</span></a></li>
+                <li><a href="arepa.html" class="seleccion2">Not<span class="red">Arepa</span></a></li>
+                <li><a href="buñuelo.html" class="seleccion2">Not<span class="yellow">Buñuelo</span></a></li>
+            </ul>
+        </li>
+        <li><a href="novedades.html" class="novedades">Novedades</a></li>
+    </ul>
+  </header>
+  <!-- FIN HEADER -->
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="principal">
+            <div class="home-text">
+                <h1>Deleitate con nuestras</h1>
+                <h1><span class="redorange">Recetas</span>not</h1>
+            </div>
+            <div class="home-img">
+                <img src="img/Imgempanadanotmeat.png" alt="">
+            </div>
+        </div>
+        
+        <div class="arrow">
+            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/jxwksgwv.json"
+            trigger="loop"
+            colors="primary:#111"
+            state="hover-1"
+            style="width:35px;height:35px">
+        </lord-icon>
+        </div>
+    </section>
+
+        <!-- NOTAREPA -->
+        <section class="arepa" id="arepa">
+            <div class="container">
+                <div class="arepa-img">
+                    <img src="img/Arepa.png" alt="">
+                </div>
+                <div class="arepa-text">
+                    <span class="subtitle">NOT<span class="yellow">BURGER</span> NOT<span class="yellow">CHEESE</span></span>
+                    <h1 class="title1">NOT<span class="red">AREPA</span></h1>
+                    <h2>20 min</h2><h2>2 porciones</h2>
+                    <p>Prueba una deliciosa arepa rellena con nuestra insuperable <b>NOTBURGER</span></b> y el sabroso <b>NOTCHEESE</b>. Todo completamente vegano, siendo los ingredientes 100% a base de plantas.</p>
+                    <a href="arepa.html" class="btn rojo">Receta</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOTBUÑUELO -->
+        <section class="bunuelo" id="bunuelo">
+            <div class="container">
+                <div class="bunuelo-text">
+                    <span class="subtitle">NOT<span class="darkblue">MILK</span> NOT<span class="yellow">CHEESE</span></span>
+                    <h1 class="title1">NOT<span class="yellow">BUÑUELO</span></h1>
+                    <h2>30 min</h2><h2>12 porciones</h2>
+                    <p>Un buñuelo calientico, con bastante quesito, pero NOT. Nuestro <b>NOTCHEESE</b> le da ese toque tan sabroso. Acompañalo con <b>NOTMILK</b> para disfrutarlo aún más.
+
+                        Con NotCo tus comidas favoritas son más saludables sin perder ese sabor identico al original.</p>
+                    <a href="buñuelo.html" class="btn amarillo">Receta</a>
+                </div>
+                <div class="bunuelo-img">
+                    <img src="img/Buñuelo.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="empanada" id="empanada">
+            <div class="container">
+                <div class="bunuelo-img">
+                    <img src="img/Empanada.png" alt="">
+                </div>
+                <div class="bunuelo-text">
+                    <span class="subtitle">NOT<span class="redorange">MEAT</span> NOT<span class="pink">MAYO</span></span>
+                    <h1 class="title1">NOT<span class="orange">EMPANADA</span></h1>
+                    <h2>40 min</h2><h2>8 porciones</h2>
+                    <p>Disfruta de una rica empanada de carne con nuestra molida <b>NOTMEAT</span></b> y acompañala con nuestra <b>NOTMAYO</b> disfrutandola en cualquiera de sus sabores.
+                        La empanada más saludable que comeras nunca, sin perder el sabor y solo elaborada con plantas.</p>
+                    <a href="empanada.html" class="btn naranja">Receta</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="arroz" id="arroz">
+            <div class="container">
+                <div class="arroz-text">
+                    <span class="subtitle">NOT<span class="yellow">CHEESE</span> NOT<span class="darkblue">MILK</span>
+                    <h1 class="title1">NOT<span class="blue">ARROZ</span></h1>
+                    <h2>40 min</h2><h2>10 porciones</h2>
+                    <p>Saborea la <b>NOTMILK</span></b> en todo su esplendor con esta preparación tan típica, aprovecha el delicioso arroz bien caliente con nuestro <b>NOTCHEESE</b>
+                        y ve como se derrite.
+                        El arroz con leche quedará aún más delicioso con <b>NOTMILK</b> y además completamente vegano ¿Qué más se puede pedir?</p>
+                    <a href="arroz.html" class="btn celeste">Receta</a>
+                </div>
+                <div class="arroz-img">
+                    <img src="img/Arroz con leche.png" alt="">
+                </div>
+            </div>
+        </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-footer">
+        <div class="footer-row">
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../index.html" class="logo"><img src="img/White logo.png" alt=""></a></li><br>
+                    <li class="title"><a href="nosotros.html" class="we">NOSOTROS</a></li>
+                    <li class="title"><a href="novedades.html" class="news">NOVEDADES</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 class="hoverproductos"><a href="productos.html">Productos</a></h4>
+                <ul class="notproducts">
+                  <li><a href="productos.html">Not<span class="mayo">Mayo</span></a></li>
+                  <li><a href="burger.html">Not<span class="burger">Burger</span></a></li>
+                  <li><a href="chicken.html">Not<span class="chicken">Chicken</span></a></li>
+                  <li><a href="milk.html">Not<span class="milk">Milk</span></a></li>
+                  <li><a href="cheese.html">Not<span class="burger">Cheese</span></a></li>
+                  <li><a href="icecream.html">Not<span class="icecream">Icecream</span></a></li>
+                  <li><a href="html productos/cream.html">Not<span class="milk">Cream</span></a></li>
+                  <li><a href="html productos/meat.html">Not<span class="meat">Meat</span></a></li>
+                  <li><a href="html productos/milanesa.html">Not<span class="mila">Mila</span></a></li>
+              </ul>
+          </div>
+          <div class="footer-links">
+              <h4 class="hoverrecetas"><a href="recetas.html">Recetas</a></h4>
+              <ul>
+                  <li><a href="empanada.html">Not<span class="mila">Empanada</span></a></li>
+                  <li><a href="arroz.html">Not<span class="milk">Arroz</span></a></li>
+                  <li><a href="arepa.html">Not<span class="meat">Arepa</span></a></li>
+                  <li><a href="buñuelo.html">Not<span class="burger">Buñuelo</span></a></li>
+              </ul>
+          </div>
+          <div class="footer-links">
+              <h4>Contáctanos</h4>
+              <ul class="contact-us">
+                  <li class="facebook"><a href="https://www.facebook.com/thenotcompany/"><i class='bx bxl-facebook'></i>@thenotcompany</a></li>
+                  <li class="instagram"><a href="https://https//www.instagram.com/thenotco/"><i class='bx bxl-instagram'></i>@thenotco</a></li>
+                  <li class="linkedin"><a href="https://www.linkedin.com/company/the-not-co-/"><i class='bx bxl-linkedin'></i>NotCo</a></li>
+                  <li class="youtube"><a href="https://www.youtube.com/channel/UCT2H7LfjkiIQpusjjVlclxg"><i class='bx bxl-youtube'></i>NotCo</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- FIN FOOTER -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="html/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,620 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+    --yellow:#ffcd00;
+    --blue:#00b4ff;
+    --pink: #ff0091;
+    --red: #eb0028;
+    --purple: #9900ff;
+    --morado: #af1eaa;
+    --red-orange: #ff4614;
+    --orange: #ff8c00;
+    --green: #91d700;
+    --brown: #964600;
+    --mint: #2dd7c3;
+    --darkblue: #006eff;
+}
+
+span.blue{color: var(--blue);}
+span.orange{color: var(--orange);}
+span.pink{color: var(--pink);}
+span.purple{color: var(--purple);}
+span.red{color: var(--red);}
+span.redorange{color: var(--red-orange);}
+span.yellow{color: var(--yellow);}
+span.green{color: var(--green);}
+span.mint{color: var(--mint);}
+span.darkblue{color: var(--darkblue);}
+span.brown{color: var(--brown);}
+span.morado{color: var(--morado);}
+
+section{
+    padding: 30px 7%;
+}
+
+*::selection{
+    background: gainsboro;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111;
+    padding: 10px 7%;
+    transition: 0.2s;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 60px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 17px;
+    padding: 11px 28px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Cambios de color en la navbar */
+.navbar a.nosotros:hover{background-color: var(--blue);}
+.navbar a.productos:hover{background-color: var(--purple);}
+.navbar a.recetas:hover{background-color: var(--red);}
+.navbar a.novedades:hover{background-color: var(--pink);}
+/* Fin cambios de color */
+
+#menu-icon{
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+/* Menú desplegable */
+.navbar li a{
+    background-color: #111;
+    color: #fff;
+    padding: 20px 25px;
+    display: block;
+}
+
+.navbar li a.productos{
+    color: #a51fff;
+}
+
+.navbar li a.productos:hover{
+    color: #fff;
+}
+
+.navbar li a.seleccion{
+    text-transform: capitalize;
+    background-color: #f7f7f7;
+    color: #111;
+    font-size: 1.2rem;
+    padding: 15px 25px;
+}
+
+.navbar li a.seleccion1{
+    text-transform: capitalize;
+    background-color: #f7f7f7;
+    color: #111;
+    font-size: 1.2rem;
+    padding: 15px 25px 15px 15px;
+}
+
+.navbar li a.seleccion2{
+    text-transform: capitalize;
+    background-color: #f7f7f7;
+    color: #111;
+    padding: 15px 16px 15px 15px;
+    font-size: 1.2rem;
+}
+
+.navbar li a.seleccion:hover{
+    color: #fff;
+    background-color: #181818;
+}
+
+.navbar li a.seleccion1:hover{
+    color: #fff;
+    background-color: #181818;
+}
+
+.navbar li a.seleccion2:hover{
+    color: #fff;
+    background-color: #181818;
+}
+
+.navbar > li{
+    float: left;
+}
+
+.navbar li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+.navbar li:hover > ul{
+    display: block;
+}
+
+.navbar li ul li{
+    position: relative;
+}
+
+.navbar li ul li ul{
+    right: 153px;
+    top: 0px;
+}
+/* Fin menú desplegable */
+/* FIN HEADER */
+
+/* HOME */
+.principal{
+    display: flex;
+    padding: 100px 0;
+}
+
+.arrow{
+    padding: 0;
+    margin: 0 auto;
+    rotate: 90deg;
+    margin-bottom: -30px;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #111;
+    gap: 1rem;
+}
+
+.home-text{
+    margin-top: 150px;
+    flex: 1 1 13rem;
+}
+
+.home-text h1{
+    font-size: 90px;
+    text-transform: uppercase;
+    /* rotate: -90deg; */
+    color: #fff;
+}
+
+.home-img{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    flex: 1 1 10rem;
+}
+
+.home-img img{
+    width: 105%;
+}
+
+.home-img img.pngproducts{
+    position: absolute;
+    animation: animate 3s linear infinite;
+}
+
+.home-img img.notcolombia{
+    position: absolute;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-10px, 10px);
+    }
+    50%{
+        transform: translate(-10px, -10px);
+    }
+    100%{
+        transform: translate(-10px, 10px);
+    }
+}
+
+/* FIN HOME */
+
+.wrapper nav{
+    position: relative;
+    width: 15%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0 -20px 230px;
+}
+.wrapper nav label{
+    display: block;
+    /* height: 100%; */
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    color: #818181;
+    font-size: 21.5px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+  
+#Mayo:checked ~ nav label.Mayo,
+#Burger:checked ~ nav label.Burger,
+#Chicken:checked ~ nav label.Chicken,
+#Milk:checked ~ nav label.Milk,
+#Cheese:checked ~ nav label.Cheese,
+#Icecream:checked ~ nav label.Icecream,
+#Cream:checked ~ nav label.Cream,
+#Meat:checked ~ nav label.Meat,
+#Mila:checked ~ nav label.Mila{
+    color: #111;
+}
+
+#Mayo:checked ~ nav label.Mayo span{
+    color: var(--pink);
+}
+#Icecream:checked ~ nav label.Icecream span{
+    color: var(--red);
+}
+#Burger:checked ~ nav label.Burger span{
+    color: var(--yellow);
+}
+#Chicken:checked ~ nav label.Chicken span{
+    color: var(--purple);
+}
+#Milk:checked ~ nav label.Milk span{
+    color: var(--blue);
+}
+#Cheese:checked ~ nav label.Cheese span{
+    color: var(--yellow);
+}
+#Cream:checked ~ nav label.Cream span{
+    color: var(--blue);
+}
+#Meat:checked ~ nav label.Meat span{
+    color: var(--red-orange);
+}
+#Mila:checked ~ nav label.Mila span{
+    color: var(--orange);
+}
+  
+input[type="radio"]{
+    display: none;
+}
+  
+section .content{
+    display: none;
+    background: #fff;
+    padding: 0 5%;
+}
+  
+#Mayo:checked ~ section .content-1,
+#Burger:checked ~ section .content-2,
+#Chicken:checked ~ section .content-3,
+#Milk:checked ~ section .content-4,
+#Cheese:checked ~ section .content-5,
+#Icecream:checked ~ section .content-6,
+#Cream:checked ~ section .content-7,
+#Meat:checked ~ section .content-8,
+#Mila:checked ~ section .content-9{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+/* CARD */
+.card span{text-transform: uppercase;}
+
+.title h1{
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    z-index: 0;
+    margin-bottom: -50px;
+}
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    z-index: 3;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #292929;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 50px;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #111;
+    background: rgba(228, 228, 228, 0.8);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #292929;
+}
+
+.card .back .link{
+    border-top: solid 2px #111;
+    height: 50px;
+    line-height: 50px;
+    padding-top: 6px;
+}
+
+.card .back h3{
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+.card .back img{
+    width: 80%;
+    margin-left: 30px;
+}
+
+.card .back img.mayolowfat{
+    width: 70%;
+    margin-left: 40px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.btn{
+    padding: 7px 16px;
+    border-radius: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+/* FIN CARD */
+
+/* FOOTER */
+.container-footer{
+    max-width: 1590px;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: #111;
+    padding: 80px 0;
+}
+
+.footer img{
+    width: 90px;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 25px;
+}
+
+.footer-links h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-links h4 a{
+    color: #fff;
+}
+
+.footer-links h4.hoverproductos a:hover{
+    color: var(--purple);
+    transition: all .3s ease;
+}
+
+.footer-links h4.hoverrecetas a:hover{
+    color: var(--red);
+    transition: all .3s ease;
+}
+
+.footer-links ul li{
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul.contact-us li span{
+    display: inline-flex;
+    margin-bottom: -13px;
+}
+
+.footer-links ul li.title a{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-links ul li a{
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a.we:hover{
+    padding-left: 0px;
+    color: var(--blue);
+    transition: all .3s ease;
+}
+
+.footer-links ul li a.logo:hover{
+    padding-left: 0px;
+}
+
+.footer-links ul li a.news:hover{
+    padding-left: 0px;
+    color: var(--pink);
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+    padding-left: 6px;
+}
+
+.footer-links ul li a:hover span.mayo{
+    color: var(--pink);
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover span.burger{
+    color: var(--yellow);
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover span.chicken{
+    color: var(--purple);
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover span.milk{
+    color: var(--blue);
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover span.icecream{
+    color: var(--red);
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover span.meat{
+    color: var(--red-orange);
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover span.mila{
+    color: var(--orange);
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover span.tamal{
+    color: var(--green);
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover span.arepa{
+    color: var(--darkblue);
+    transition: all .3s ease;
+}
+
+.footer-links ul.contact-us li i{
+    font-size: 20px;
+    padding: 3px;
+    color: #111;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .5s ease;
+}
+
+.footer-links ul.contact-us li.facebook:hover i{
+    background: var(--blue);
+}
+
+.footer-links ul.contact-us li.instagram:hover i{
+    background: var(--pink);
+}
+
+.footer-links ul.contact-us li.linkedin:hover i{
+    background: var(--darkblue);
+}
+
+.footer-links ul.contact-us li.youtube:hover i{
+    background: var(--red);
+}
+/* FIN FOOTER */

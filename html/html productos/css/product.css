@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+    --yellow:#ffcd00;
+    --blue:#00b4ff;
+    --pink: #ff0091;
+    --red: #eb0028;
+    --purple: #9900ff;
+    --morado: #af1eaa;
+    --red-orange: #ff4614;
+    --orange: #ff8c00;
+    --green: #91d700;
+    --brown: #964600;
+    --mint: #2dd7c3;
+    --darkblue: #006eff;
+}
+
+span.blue{color: var(--blue);}
+span.orange{color: var(--orange);}
+span.pink{color: var(--pink);}
+span.purple{color: var(--purple);}
+span.red{color: var(--red);}
+span.redorange{color: var(--red-orange);}
+span.yellow{color: var(--yellow);}
+span.green{color: var(--green);}
+span.mint{color: var(--mint);}
+span.darkblue{color: var(--darkblue);}
+span.brown{color: var(--brown);}
+span.morado{color: var(--morado);}
+
+/* HEADER */
+
+header{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px 7%;
+  transition: 0.2s;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 60px;
+}
+
+.navbar{
+  display: flex;
+}
+
+.navbar a{
+  font-size: 17px;
+  padding: 11px 28px;
+  color: #111;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Cambios de color en la navbar */
+.navbar a.nosotros:hover{background-color: var(--blue); color: #fff;}
+.navbar a.productos:hover{background-color: var(--purple); color: #fff;}
+.navbar a.recetas:hover{background-color: var(--red); color: #fff;}
+.navbar a.novedades:hover{background-color: var(--pink); color: #fff;}
+/* Fin cambios de color */
+
+
+#menu-icon{
+  font-size: 40px;
+  color: #111;
+  cursor: pointer;
+  z-index: 1001;
+  display: none;
+}
+
+/* Menú desplegable */
+.navbar li a{
+  background-color: #fff;
+  color: #111;
+  padding: 20px 25px;
+  display: block;
+}
+
+.navbar li a.nosotros, a.productos, a.recetas, a.novedades{
+  font-weight: 700;
+}
+
+.navbar li a.seleccion{
+  text-transform: capitalize;
+  background-color: #f7f7f7;
+  color: #111;
+  font-size: 1.2rem;
+  padding: 15px 25px;
+}
+
+.navbar li a.seleccion1{
+  text-transform: capitalize;
+  background-color: #f7f7f7;
+  color: #111;
+  font-size: 1.2rem;
+  padding: 15px 27px 15px 15px;
+}
+
+.navbar li a.seleccion2{
+  text-transform: capitalize;
+  background-color: #f7f7f7;
+  color: #111;
+  padding: 15px 19px 15px 15px;
+  font-size: 1.2rem;
+}
+
+.navbar li a.seleccion:hover{
+  color: #fff;
+  background-color: #181818;
+}
+
+.navbar li a.seleccion1:hover{
+  color: #fff;
+  background-color: #181818;
+}
+
+.navbar li a.seleccion2:hover{
+  color: #fff;
+  background-color: #181818;
+}
+
+.navbar > li{
+  float: left;
+}
+
+.navbar li ul{
+  display: none;
+  position: absolute;
+  min-width: 150px;
+}
+
+.navbar li:hover > ul{
+  display: block;
+}
+
+.navbar li ul li{
+  position: relative;
+}
+
+.navbar li ul li ul{
+  right: 153px;
+  top: 0px;
+}
+/* Fin menú desplegable */
+/* FIN HEADER */
+
+section.product{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 7% 0 5%;
+}
+
+.product h2{
+  position: absolute;
+  top: 27%;
+  left: 55%;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 span{
+  color: #fff;
+}
+
+.img{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  margin: 100px 0;
+  flex: 1 1 17rem;
+}
+
+section.product .img img{
+  width: 85%;
+}
+
+::selection{
+  background: gainsboro;
+}
+
+.wrapper{
+  flex: 1 1 17rem;
+  max-width: 700px;
+  width: 100%;
+  margin: 200px auto;
+  padding: 25px 30px 30px 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+
+.wrapper h1{
+  font-size: 50px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.wrapper nav{
+  position: relative;
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper nav label{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  line-height: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: #818181;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+
+#ingredientes:checked ~ nav label.Ingredientes,
+#nutrientes:checked ~ nav label.Nutrientes{
+  color: #111;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+#nutrientes:checked ~ nav .slider{
+  left: 50%;
+}
+
+section .content{
+  display: none;
+  background: #fff;
+}
+
+#ingredientes:checked ~ section .content-1,
+#nutrientes:checked ~ section .content-2{
+  display: block;
+}
+
+section .content p, section .content table{
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+section .content table tr th{
+  padding: 0 20px 0 0;
+}
+
+section .content table tr td{
+  padding: 0 20px 0 0;
+}
+
+
+
+/* FOOTER */
+.container-footer{
+  max-width: 1590px;
+  margin: 0 auto;
+}
+
+.footer{
+  background-color: #111;
+  padding: 80px 0;
+}
+
+.footer img{
+  width: 90px;
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links{
+  width: 25%;
+  padding: 0 25px;
+}
+
+.footer-links h4{
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.footer-links h4 a{
+  color: #fff;
+}
+
+.footer-links h4.hoverproductos a:hover{
+  color: var(--purple);
+  transition: all .3s ease;
+}
+
+.footer-links h4.hoverrecetas a:hover{
+  color: var(--red);
+  transition: all .3s ease;
+}
+
+.footer-links ul li{
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+}
+
+.footer-links ul.contact-us li span{
+  display: inline-flex;
+  margin-bottom: -13px;
+}
+
+.footer-links ul li.title a{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.footer-links ul li a{
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+}
+
+.footer-links ul li a.we:hover{
+  padding-left: 0px;
+  color: var(--blue);
+  transition: all .3s ease;
+}
+
+.footer-links ul li a.logo:hover{
+  padding-left: 0px;
+}
+
+.footer-links ul li a.news:hover{
+  padding-left: 0px;
+  color: var(--pink);
+  transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+  padding-left: 6px;
+}
+
+.footer-links ul li a:hover span.mayo{
+  color: var(--pink);
+  transition: all .3s ease;
+}
+.footer-links ul li a:hover span.burger{
+  color: var(--yellow);
+  transition: all .3s ease;
+}
+.footer-links ul li a:hover span.chicken{
+  color: var(--purple);
+  transition: all .3s ease;
+}
+.footer-links ul li a:hover span.milk{
+  color: var(--blue);
+  transition: all .3s ease;
+}
+.footer-links ul li a:hover span.icecream{
+  color: var(--red);
+  transition: all .3s ease;
+}
+.footer-links ul li a:hover span.meat{
+  color: var(--red-orange);
+  transition: all .3s ease;
+}
+.footer-links ul li a:hover span.mila{
+  color: var(--orange);
+  transition: all .3s ease;
+}
+.footer-links ul li a:hover span.tamal{
+  color: var(--green);
+  transition: all .3s ease;
+}
+.footer-links ul li a:hover span.arepa{
+  color: var(--darkblue);
+  transition: all .3s ease;
+}
+
+.footer-links ul.contact-us li i{
+  font-size: 20px;
+  padding: 3px;
+  color: #111;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all .5s ease;
+}
+
+.footer-links ul.contact-us li.facebook:hover i{
+  background: var(--blue);
+}
+
+.footer-links ul.contact-us li.instagram:hover i{
+  background: var(--pink);
+}
+
+.footer-links ul.contact-us li.linkedin:hover i{
+  background: var(--darkblue);
+}
+
+.footer-links ul.contact-us li.youtube:hover i{
+  background: var(--red);
+}
+/* FIN FOOTER */

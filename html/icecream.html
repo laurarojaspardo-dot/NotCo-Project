@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/productos.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <style>
+        .content .original{border: 2px solid #ff0091;color: #ff0091;}
+        .content .original:hover{background: #ff0091;color: #fff;}
+
+        .content .garlic{border: 2px solid #af1eaa;color: #af1eaa;}
+        .content .garlic:hover{background: #af1eaa;color: #fff;}
+
+        .content .spicy{border: 2px solid #ff4614;color: #ff4614;}
+        .content .spicy:hover{background: #ff4614;color: #fff;}
+
+        .content .olive{border: 2px solid #91d700;color: #91d700;}
+        .content .olive:hover{background: #91d700;color: #fff;}
+
+        .content .lowfat{border: 2px solid #00b4ff;color: #00b4ff;}
+        .content .lowfat:hover{background: #00b4ff;color: #fff;}
+
+        .content .burger{border: 2px solid #ffcd00;color: #ffcd00;}
+        .content .burger:hover{background: #ffcd00;color: #fff;}
+
+        .content .chicken{border: 2px solid #9900ff;color: #9900ff;}
+        .content .chicken:hover{background: #9900ff;color: #fff;}
+
+        .content .nuggets{border: 2px solid #006eff;color: #006eff;}
+        .content .nuggets:hover{background: #006eff;color: #fff;}
+
+        .content .cafe{border: 2px solid #964600;color: #964600;}
+        .content .cafe:hover{background: #964600;color: #fff;}
+
+        .content .peanut{border: 2px solid #ff8c00;color: #ff8c00;}
+        .content .peanut:hover{background: #ff8c00;color: #fff;}
+
+        .content .merken{border: 2px solid #eb0028;color: #eb0028;}
+        .content .merken:hover{background: #eb0028;color: #fff;}
+
+        .content .menta{border: 2px solid #2dd7c3;color: #2dd7c3;}
+        .content .menta:hover{background: #2dd7c3;color: #fff;}
+    </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <a href="../index.html" class="logo"><img src="img/White logo.png" alt=""></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="nosotros.html" class="nosotros">Nosotros</a></li>
+        <li><a href="productos.html" class="productos">Productos</a>
+            <ul>
+
+                <li><a href="productos.html" class="seleccion1">Not<span class="pink">Mayo</span></a>
+                    <ul>
+                        <li><a href="html productos/mayo.html" class="seleccion">Mayo<span class="pink">Original</span></a></li>
+                        <li><a href="html productos/garlic.html" class="seleccion">Mayo<span class="purple">Garlic</span></a></li>
+                        <li><a href="html productos/spicy.html" class="seleccion">Mayo<span class="redorange">Spicy</span></a></li>
+                        <li><a href="html productos/olive.html" class="seleccion">Mayo<span class="green">Olive</span></a></li>
+                        <li><a href="html productos/lowfat.html" class="seleccion">Mayo<span class="blue">Low Fat</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="burger.html" class="seleccion1">Not<span class="yellow">Burger</span></a>
+                    <ul>
+                        <li><a href="html productos/burger100.html" class="seleccion">Burger<span class="yellow">100G</span></a></li>
+                        <li><a href="html productos/burger500.html" class="seleccion">Burger<span class="yellow">500G</span></a></li>
+                        <li><a href="html productos/burgerxl.html" class="seleccion">Burger<span class="yellow">XL</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="chicken.html" class="seleccion1">Not<span class="purple">Chicken</span></a>
+                    <ul>
+                        <li><a href="html productos/chicken.html" class="seleccion">Not<span class="purple">Burger</span></a></li>
+                        <li><a href="html productos/chickencrispy.html" class="seleccion">Not<span class="morado">Burger Crispy</span></a></li>
+                        <li><a href="html productos/nuggets.html" class="seleccion">Not<span class="darkblue">Nuggets</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="milk.html" class="seleccion1">Not<span class="blue">Milk</span></a>
+                    <ul>
+                        <li><a href="html productos/milkoriginal.html" class="seleccion">Milk<span class="darkblue">Original</span></a></li>
+                        <li><a href="html productos/milklowfat.html" class="seleccion">Milk<span class="blue">Low Fat</span></a></li>
+                        <li><a href="html productos/milkchocolate.html" class="seleccion">Milk<span class="brown">Chocolate</span></a></li>
+                        <li><a href="html productos/milkzero.html" class="seleccion">Milk<span class="green">Zero</span></a></li>
+                        <li><a href="html productos/milkcaramelo.html" class="seleccion">Milk<span class="brown">Café Caramelo</span></a></li>
+                        <li><a href="html productos/milkhppeanut.html" class="seleccion">Milk<span class="orange">HP Peanut Butter</span></a></li>
+                        <li><a href="html productos/milkhpchocolate.html" class="seleccion">Milk<span class="brown">HP Chocolate</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="cheese.html" class="seleccion1">Not<span class="yellow">Cheese</span></a>
+                    <ul>
+                        <li><a href="html productos/mantecoso.html" class="seleccion">Cheese<span class="yellow">Mantecoso</span></a></li>
+                        <li><a href="html productos/cheddar.html" class="seleccion">Cheese<span class="orange">Cheddar</span></a></li>
+                        <li><a href="html productos/merkén.html" class="seleccion">Cheese<span class="red">Merkén</span></a></li>
+                        <li><a href="html productos/ahumado.html" class="seleccion">Cheese<span class="pink">Ahumado</span></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="icecream.html" class="seleccion1">Not<span class="red">Icecream</span></a></li>
+                <li><a href="html productos/cream.html" class="seleccion1">Not<span class="blue">Cream</span></a></li>
+                <li><a href="html productos/meat.html" class="seleccion1">Not<span class="redorange">Meat</span></a></li>
+                <li><a href="html productos/milanesa.html" class="seleccion1">Not<span class="orange">Mila</span></a></li>
+
+            </ul>
+        </li>
+        <li><a href="recetas.html" class="recetas">Recetasnot</a>
+            <ul>
+                <li><a href="empanada.html" class="seleccion2">Not<span class="orange">Empanada</span></a></li>
+                <li><a href="arroz.html" class="seleccion2">Not<span class="blue">Arroz</span></a></li>
+                <li><a href="arepa.html" class="seleccion2">Not<span class="red">Arepa</span></a></li>
+                <li><a href="buñuelo.html" class="seleccion2">Not<span class="yellow">Buñuelo</span></a></li>
+            </ul>
+        </li>
+        <li><a href="novedades.html" class="novedades">Novedades</a></li>
+    </ul>
+  </header>
+  <!-- FIN HEADER -->
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="principal">
+            <div class="home-text">
+                <h1>Conoce nuestros</h1>
+                <h1>NOT<span class="red">PRODUCTS</span></h1>
+            </div>
+            <div class="home-img">
+                <img src="img/Productos/BANNER PRODUCTOS.png" alt="">
+                <img class="pngproducts" src="img/Productos/Productos.png" alt="">
+                <img src="img/Productos/NotColombia.png" alt="" class="notcolombia">
+            </div>
+        </div>
+        
+        <div class="arrow">
+            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/jxwksgwv.json"
+            trigger="loop"
+            colors="primary:#ffffff"
+            state="hover-1"
+            style="width:35px;height:35px">
+        </lord-icon>
+        </div>
+    </section>
+
+
+    <!-- MENU TABS-->
+    <div class="wrapper">
+        <input type="radio" name="slider" id="Mayo">
+        <input type="radio" name="slider" id="Burger">
+        <input type="radio" name="slider" id="Chicken">
+        <input type="radio" name="slider" id="Milk">
+        <input type="radio" name="slider" id="Cheese">
+        <input type="radio" name="slider" id="Icecream" checked>
+        <input type="radio" name="slider" id="Cream">
+        <input type="radio" name="slider" id="Meat">
+        <input type="radio" name="slider" id="Mila">
+
+        <nav>
+            <label for="Mayo" class="Mayo">NOT<span class="Mayo">MAYO</span></label>
+            <label for="Burger" class="Burger">NOT<span class="Burger">BURGER</span></label>
+            <label for="Chicken" class="Chicken">NOT<span class="Chicken">CHICKEN</span></label>
+            <label for="Milk" class="Milk">NOT<span class="Milk">MILK</span></label>
+            <label for="Cheese" class="Cheese">NOT<span class="Cheese">CHEESE</span></label>
+            <label for="Icecream" class="Icecream">NOT<span class="Icecream">ICECREAM</span></label>
+            <label for="Cream" class="Cream">NOT<span class="Cream">CREAM</span></label>
+            <label for="Meat" class="Meat">NOT<span class="Meat">MEAT</span></label>
+            <label for="Mila" class="Mila">NOT<span class="Mila">MILA</span></label>
+        </nav>
+
+        <section>
+            <div class="content content-1">
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Not mayo.png" alt="">
+                        <h3>ORIGINAL</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="pink">ORIGINAL</span>350G</h3>
+                        <img src="img/Productos/IngrMayo.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/mayo.html" class="btn original">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Not Garlic.png" alt="">
+                        <h3>GARLIC</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="morado">GARLIC</span>350G</h3>
+                        <img src="img/Productos/IngrGarlic.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/garlic.html" class="btn garlic">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Not Spicy.png" alt="">
+                        <h3>SPICY</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="redorange">SPICY</span>350G</h3>
+                        <img src="img/Productos/IngrSpicy.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/spicy.html" class="btn spicy">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Not Olive.png" alt="">
+                        <h3>OLIVE</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="green">OLIVE</span>350G</h3>
+                        <img src="img/Productos/IngrOlive.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/olive.html" class="btn olive">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Not Fat.png" alt="">
+                        <h3>LOW FAT</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="blue">LOW FAT</span>670G</h3>
+                        <img class="mayolowfat" src="img/Productos/IngrFat.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/lowfat.html" class="btn lowfat">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content content-2">
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Notburguer-100g.png" alt="">
+                        <h3>BURGER 100G</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="yellow">BURGER</span>100G</h3>
+                        <img src="img/Productos/IngrBurger100.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/burger100.html" class="btn burger">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/XLBurger.png" alt="">
+                        <h3>BURGER XL</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="yellow">XL</span>150G</h3>
+                        <img src="img/Productos/IngrBurger150.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/burgerxl.html" class="btn burger">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Notburguer-500g.png" alt="">
+                        <h3>Burger 500g</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="yellow">burger</span>500G</h3>
+                        <img src="img/Productos/IngrBurger100.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/burger500.html" class="btn burger">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="content content-3">
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Chickenburger-flowpack.png" alt="">
+                        <h3>Burger</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="purple">Burger</span>95G</h3>
+                        <img src="img/Productos/IngrChickenBurger100.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/chicken.html" class="btn chicken">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Chicken-nuggets-300gr.png" alt="">
+                        <h3>Nuggets</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="darkblue">Nuggets</span>300G</h3>
+                        <img src="img/Productos/IngrChickenNugget100.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/nuggets.html" class="btn nuggets">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Chickenburger_crispy-flowpack.png" alt="">
+                        <h3>Burger crispy</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="morado">Burger crispy</span>95G</h3>
+                        <img src="img/Productos/IngrChickenBurgercrispy100.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/chickencrispy.html" class="btn garlic">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content content-4">
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Notmilk.png" alt="">
+                        <h3>Original</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="darkblue">original</span>1L</h3>
+                        <img src="img/Productos/Ingrmilkoriginal.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/milkoriginal.html" class="btn nuggets">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Lowfat.png" alt="">
+                        <h3>low fat</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="blue">low fat</span>1L</h3>
+                        <img src="img/Productos/Ingrmilklowfat.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/milklowfat.html" class="btn lowfat">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Cafe-caramelo.png" alt="">
+                        <h3>Café Caramelo</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="brown">café caramelo</span>1L</h3>
+                        <img src="img/Productos/Ingrmilkcafe.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/milkcaramelo.html" class="btn cafe">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Zero_sugar-1.png" alt="">
+                        <h3>Zero sugar</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="green">zero sugar</span>1L</h3>
+                        <img src="img/Productos/Ingrmilkzero.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/milkzero.html" class="btn olive">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Chocolcate1L.ng.png" alt="">
+                        <h3>Chocolate</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="brown">Chocolate</span>1L</h3>
+                        <img src="img/Productos/Ingrmilkchocolate.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/milkchocolate.html" class="btn cafe">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Highprotein-peanutbutter.png" alt="">
+                        <h3>High protein peanut butter</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="orange">Peanut butter</span>250ML</h3>
+                        <img src="img/Productos/Ingrmilkpeanut.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/milkhppeanut.html" class="btn peanut">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Highprotein-chocolate.png" alt="">
+                        <h3>High protein chocolate</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="brown">Chocolate</span>250ML</h3>
+                        <img src="img/Productos/Ingrmilkhighchocolate.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/milkhpchocolate.html" class="btn cafe">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content content-5">
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Mantecoso.png" alt="">
+                        <h3>Mantecoso</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="yellow">Mantecoso</span>200G</h3>
+                        <img src="img/Productos/ingrcheesemantecoso.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/mantecoso.html" class="btn burger">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/CheddarNUEVAVERSION.png" alt="">
+                        <h3>Cheddar</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="orange">Cheddar</span>200G</h3>
+                        <img src="img/Productos/ingrcheddar.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/cheddar.html" class="btn spicy">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Ahumado.png" alt="">
+                        <h3>Ahumado</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="pink">Ahumado</span>200G</h3>
+                        <img src="img/Productos/Ingrahumado.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/ahumado.html" class="btn original">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Merken.png" alt="">
+                        <h3>Merkén</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="red">Merkén</span>200G</h3>
+                        <img src="img/Productos/IngrMerken.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/merkén.html" class="btn merken">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content content-6">
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Frambuesa.png" alt="">
+                        <h3>CHEESECAKE DE FRAMBUESA</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="red">Cheesecake de FRAMBUESA</span>298G</h3>
+                        <img src="img/Productos/IngrFrambuesa.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/icecreamframbuesa.html" class="btn merken">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Chocolove.png" alt="">
+                        <h3>CHOCOLOVE</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="brown">CHOCOLOVE</span>296G</h3>
+                        <img src="img/Productos/IngrChocolove.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/icecreamchocolate.html" class="btn cafe">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Cookies_and_dreams.png" alt="">
+                        <h3>Cookies and Dreams</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="purple">Cookies and dreams</span>350G</h3>
+                        <img src="img/Productos/IngrCookies.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/icecreamcookies.html" class="btn chicken">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Salted_caramel.png" alt="">
+                        <h3>Salted Caramel Wave</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="orange">Salted Caramel Wave</span>304G</h3>
+                        <img src="img/Productos/IngrSalted.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/icecreamcaramel.html" class="btn peanut">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Frescura_tropical.png" alt="">
+                        <h3>Frescura Tropical</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="green">Frescura Tropical</span>304G</h3>
+                        <img src="img/Productos/IngrFrescura.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/icecreamtropical.html" class="btn olive">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Tableta-dulce-de-leche.png" alt="">
+                        <h3>Tableta dulce de leche</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="brown">Dulce de leche</span>300G</h3>
+                        <img src="img/Productos/Ingrdulcedeleche.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/tabletadulceleche.html" class="btn cafe">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Tableta-menta.png" alt="">
+                        <h3>Tableta de Menta</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="mint">Menta</span>300G</h3>
+                        <img src="img/Productos/Ingrmenta.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/tabletamenta.html" class="btn menta">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Tableta-chocolate.png" alt="">
+                        <h3>Tableta de Chocolate</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="morado">Chocolate</span>300G</h3>
+                        <img src="img/Productos/Ingrchocolate.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/tabletachocolate.html" class="btn cafe">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Cremoso-de-vainilla-box.png" alt="">
+                        <h3>Cremoso de Vainilla</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="darkblue">Vainilla</span>272G</h3>
+                        <img src="img/Productos/IngrCremosovainilla.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/cremosovainilla.html" class="btn nuggets">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Cremoso-de-frambuesa-box.png" alt="">
+                        <h3>Cremoso de Frambuesa</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="pink">Frambuesa</span>272G</h3>
+                        <img src="img/Productos/IngrCremosoframbuesa.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/cremosoframbuesa.html" class="btn original">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Crocante_chocolate-box.png" alt="">
+                        <h3>Crocante de chocolate</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="brown">Chocolate</span>280G</h3>
+                        <img src="img/Productos/IngrCrocante.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/crocantechocolate.html" class="btn cafe">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content content-7">
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Cream_2022-11-23-162640_kncm.png" alt="">
+                        <h3>Cream</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="blue">Cream</span>200G</h3>
+                        <img src="img/Productos/ingrcream.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/cream.html" class="btn lowfat">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content content-8">
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Notmeat.png" alt="">
+                        <h3>Molida</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="redorange">Molida</span>400G</h3>
+                        <img src="img/Productos/Ingrmolida.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/meat.html" class="btn spicy">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content content-9">
+                <div class="card">
+                    <div class="face front">
+                        <img src="img/Productos/Mila_SH.png" alt="">
+                        <h3>Milanesa</h3>
+                    </div>
+                    <div class="face back">
+                        <h3><span class="orange">Milanesa</span>120G</h3>
+                        <img src="img/Productos/ingrmilanesa.PNG" alt="">
+                        <div class="link">
+                            <a href="html productos/milanesa.html" class="btn peanut">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-footer">
+        <div class="footer-row">
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../index.html" class="logo"><img src="img/White logo.png" alt=""></a></li><br>
+                    <li class="title"><a href="nosotros.html" class="we">NOSOTROS</a></li>
+                    <li class="title"><a href="novedades.html" class="news">NOVEDADES</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 class="hoverproductos"><a href="productos.html">Productos</a></h4>
+                <ul class="notproducts">
+                  <li><a href="productos.html">Not<span class="mayo">Mayo</span></a></li>
+                  <li><a href="burger.html">Not<span class="burger">Burger</span></a></li>
+                  <li><a href="chicken.html">Not<span class="chicken">Chicken</span></a></li>
+                  <li><a href="milk.html">Not<span class="milk">Milk</span></a></li>
+                  <li><a href="cheese.html">Not<span class="burger">Cheese</span></a></li>
+                  <li><a href="icecream.html">Not<span class="icecream">Icecream</span></a></li>
+                  <li><a href="html productos/cream.html">Not<span class="milk">Cream</span></a></li>
+                  <li><a href="html productos/meat.html">Not<span class="meat">Meat</span></a></li>
+                  <li><a href="html productos/milanesa.html">Not<span class="mila">Mila</span></a></li>
+              </ul>
+          </div>
+          <div class="footer-links">
+              <h4 class="hoverrecetas"><a href="recetas.html">Recetas</a></h4>
+              <ul>
+                  <li><a href="empanada.html">Not<span class="mila">Empanada</span></a></li>
+                  <li><a href="arroz.html">Not<span class="milk">Arroz</span></a></li>
+                  <li><a href="arepa.html">Not<span class="meat">Arepa</span></a></li>
+                  <li><a href="buñuelo.html">Not<span class="burger">Buñuelo</span></a></li>
+              </ul>
+          </div>
+          <div class="footer-links">
+              <h4>Contáctanos</h4>
+              <ul class="contact-us">
+                  <li class="facebook"><a href="https://www.facebook.com/thenotcompany/"><i class='bx bxl-facebook'></i>@thenotcompany</a></li>
+                  <li class="instagram"><a href="https://https//www.instagram.com/thenotco/"><i class='bx bxl-instagram'></i>@thenotco</a></li>
+                  <li class="linkedin"><a href="https://www.linkedin.com/company/the-not-co-/"><i class='bx bxl-linkedin'></i>NotCo</a></li>
+                  <li class="youtube"><a href="https://www.youtube.com/channel/UCT2H7LfjkiIQpusjjVlclxg"><i class='bx bxl-youtube'></i>NotCo</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- FIN FOOTER -->
+
+    <!-- Link a JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
