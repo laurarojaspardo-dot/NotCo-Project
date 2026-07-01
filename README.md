@@ -6,7 +6,7 @@ Sitio web de práctica inspirado en la marca NotCo, desarrollado como proyecto p
 
 ## Sobre el proyecto
 
-Este proyecto recrea el sitio web de NotCo Colombia con fines educativos, aplicando conceptos de maquetación, diseño responsivo e integración de contenido multimedia.
+Este proyecto recrea el sitio web de NotCo Colombia con fines educativos, aplicando conceptos de maquetación e integración de contenido multimedia.
 
 ## Tecnologías usadas
 
